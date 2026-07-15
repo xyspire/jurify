@@ -74,14 +74,14 @@ export default function Footer() {
               <div className="flex flex-col gap-5 md:gap-6">
                 <h3 className="font-medium text-lg">Social Links</h3>
                 <div className="flex items-center gap-3">
-                  <a href="#" className="w-10 h-10 bg-white text-[#071330] flex items-center justify-center hover:bg-slate-200 transition-colors">
-                    <Facebook className="w-5 h-5 fill-current" />
+                  <a href="#" className="w-10 h-10 border border-white/25 text-white flex items-center justify-center hover:bg-white hover:text-[#071330] hover:border-white transition-all duration-200">
+                    <Facebook className="w-4 h-4" strokeWidth={1.5} />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-white text-[#071330] flex items-center justify-center hover:bg-slate-200 transition-colors">
-                    <Instagram className="w-5 h-5" />
+                  <a href="#" className="w-10 h-10 border border-white/25 text-white flex items-center justify-center hover:bg-white hover:text-[#071330] hover:border-white transition-all duration-200">
+                    <Instagram className="w-4 h-4" strokeWidth={1.5} />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-white text-[#071330] flex items-center justify-center hover:bg-slate-200 transition-colors">
-                    <Linkedin className="w-5 h-5 fill-current" />
+                  <a href="#" className="w-10 h-10 border border-white/25 text-white flex items-center justify-center hover:bg-white hover:text-[#071330] hover:border-white transition-all duration-200">
+                    <Linkedin className="w-4 h-4" strokeWidth={1.5} />
                   </a>
                 </div>
               </div>
@@ -103,8 +103,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="w-full flex justify-center mt-2 md:mt-8 overflow-hidden h-[100px] md:h-[180px] lg:h-[260px]">
-             <span className="text-[120px] md:text-[220px] lg:text-[340px] font-bold tracking-tighter leading-[0.8] text-white/[0.03] select-none uppercase">
+          <div className="w-full flex justify-center mt-2 md:mt-8 overflow-hidden h-[60px] md:h-[110px] lg:h-[160px]">
+             <span className="text-[120px] md:text-[220px] lg:text-[340px] font-bold tracking-tighter leading-none text-white/[0.06] select-none uppercase translate-y-[-30%]">
                Jurify
              </span>
           </div>

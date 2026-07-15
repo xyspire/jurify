@@ -3,7 +3,7 @@ import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 export default function News() {
   return (
-    <section className="w-full bg-[#eef3fe] py-16 md:py-24 px-6 md:px-12">
+    <section className="w-full bg-secondary-bg py-16 md:py-24 px-6 md:px-12">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col">
         
         {/* Header Section */}
@@ -11,9 +11,9 @@ export default function News() {
           <div className="lg:w-1/2">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[1px] bg-slate-300"></div>
-              <span className="text-[#0f172a] font-medium text-sm md:text-base tracking-wide">News & Insights</span>
+              <span className="text-dark-bg font-medium text-sm md:text-base tracking-wide">News & Insights</span>
             </div>
-            <h2 className="text-[2.2rem] md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-[#0f172a] tracking-tight">
+            <h2 className="text-[2.2rem] md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-dark-bg tracking-tight">
               Legal Insights For Informed Decisions
             </h2>
           </div>
@@ -22,7 +22,7 @@ export default function News() {
             <p className="text-slate-600 text-base md:text-lg leading-relaxed">
               Our articles are designed to clarify complex legal topics and provide guidance for individuals and businesses alike.
             </p>
-            <button className="bg-[#112a75] text-white px-6 py-3 md:px-8 md:py-4 font-semibold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-[#0c1f56] transition-colors">
+            <button className="bg-primary text-white px-6 py-3 md:px-8 md:py-4 font-semibold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-primary-dark transition-colors">
               View All Insights
               <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
             </button>
@@ -41,7 +41,7 @@ export default function News() {
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#040b16]/90 via-[#040b16]/30 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/85 via-[#0d1b3e]/40 to-[#0d1b3e]/10"></div>
             <div className="absolute bottom-0 left-0 w-full p-6 md:p-10 flex flex-col gap-3">
               <div className="flex items-center gap-3 text-white/90 text-sm md:text-base font-medium mb-1">
                 <span>News</span>
@@ -77,13 +77,13 @@ export default function News() {
                   <span className="w-[1px] h-3 bg-slate-300"></span>
                   <span>Feb 4, 2025</span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-medium text-[#0f172a] leading-[1.2] tracking-tight">
+                <h3 className="text-xl md:text-2xl font-medium text-dark-bg leading-[1.2] tracking-tight">
                   Successful Resolution in Complex Commercial Litigation Case
                 </h3>
                 <p className="hidden sm:block text-slate-600 text-sm md:text-base line-clamp-3">
                   Jurify recently secured a favorable outcome in a multi-party commercial litigation matter involving complex cross-border transactions and regulatory compliance.
                 </p>
-                <div className="flex items-center gap-2 text-[#112a75] font-medium mt-1 group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-primary font-medium mt-1 group-hover:gap-3 transition-all">
                   Read More <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -109,13 +109,13 @@ export default function News() {
                   <span className="w-[1px] h-3 bg-slate-300"></span>
                   <span>Jan 17, 2025</span>
                 </div>
-                <h3 className="text-xl md:text-2xl font-medium text-[#0f172a] leading-[1.2] tracking-tight">
+                <h3 className="text-xl md:text-2xl font-medium text-dark-bg leading-[1.2] tracking-tight">
                   Jurify Announces New Office Location to Serve Expanding Client Base
                 </h3>
                 <p className="hidden sm:block text-slate-600 text-sm md:text-base line-clamp-3">
                   To better serve our growing client base, Jurify has opened a new office location in downtown Boston, featuring state-of-the-art facilities for confidential client consultations.
                 </p>
-                <div className="flex items-center gap-2 text-[#112a75] font-medium mt-1 group-hover:gap-3 transition-all">
+                <div className="flex items-center gap-2 text-primary font-medium mt-1 group-hover:gap-3 transition-all">
                   Read More <ArrowRight className="w-4 h-4" />
                 </div>
               </div>

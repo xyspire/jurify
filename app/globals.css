@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-light-bg: #f8fafe;
+  --color-primary: #112a75;
+  --color-primary-dark: #0c1f56;
+  --color-dark-bg: #0f172a;
+  --color-secondary-bg: #eef3fe;
+  --color-darker-bg: #0b132b;
+  --color-overlay: #0d1b3e;
+}
+
 @layer utilities {
   .hide-scrollbar {
     -ms-overflow-style: none;

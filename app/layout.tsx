@@ -14,7 +14,7 @@ import SmoothScroll from '@/components/SmoothScroll';
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-[#f8fafe] text-black" suppressHydrationWarning>
+      <body className="font-sans antialiased bg-light-bg text-black" suppressHydrationWarning>
         <SmoothScroll>
           {children}
         </SmoothScroll>

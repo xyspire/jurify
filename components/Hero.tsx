@@ -16,21 +16,22 @@ export default function Hero() {
   const yContent = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   return (
-    <section ref={containerRef} className="relative w-full min-h-screen bg-black flex flex-col justify-end px-6 md:px-12 pb-16 md:pb-24 pt-32 overflow-hidden">
+    <section ref={containerRef} className="relative w-full min-h-screen bg-darker-bg flex flex-col justify-end px-6 md:px-12 pb-16 md:pb-24 pt-32 overflow-hidden">
       {/* Parallax Background */}
       <motion.div 
-        className="absolute inset-[-10%] top-0 z-0 opacity-50"
+        className="absolute inset-[-10%] top-0 z-0"
         style={{ y: yBackground }}
       >
         <Image 
           src="/bg.jpg"
           alt="Hero Background"
           fill
-          className="object-cover"
+          className="object-cover opacity-80"
           priority
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+        {/* Subtle blue-grey tint matching reference — sky/buildings clearly visible at top */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/85 via-[#0d1b3e]/40 to-[#0d1b3e]/10" />
       </motion.div>
 
       <motion.div 
@@ -45,7 +46,7 @@ export default function Hero() {
             <span className="text-white/90 font-medium text-sm md:text-base tracking-wide">Trusted Legal Guidance</span>
           </div>
           
-          <h1 className="text-[2.5rem] leading-[1.1] sm:text-6xl md:text-7xl lg:text-[5.5rem] font-bold text-white mb-6 md:mb-8 tracking-tight">
+          <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-[3.2rem] lg:text-[3.8rem] leading-[1.1] font-bold text-white mb-6 md:mb-8 tracking-tight">
             Legal Expertise with<br />Modern Solutions
           </h1>
           
@@ -59,13 +60,13 @@ export default function Hero() {
           {/* Avatars */}
           <div className="flex items-center gap-4">
             <div className="flex -space-x-3">
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-black bg-gray-800 relative overflow-hidden">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-darker-bg bg-gray-800 relative overflow-hidden">
                 <Image src="https://picsum.photos/seed/p1/100/100" alt="Client 1" fill className="object-cover" referrerPolicy="no-referrer" />
               </div>
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-black bg-gray-800 relative overflow-hidden">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-darker-bg bg-gray-800 relative overflow-hidden">
                 <Image src="https://picsum.photos/seed/p2/100/100" alt="Client 2" fill className="object-cover" referrerPolicy="no-referrer" />
               </div>
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-black bg-gray-800 relative overflow-hidden">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-darker-bg bg-gray-800 relative overflow-hidden">
                 <Image src="https://picsum.photos/seed/p3/100/100" alt="Client 3" fill className="object-cover" referrerPolicy="no-referrer" />
               </div>
             </div>

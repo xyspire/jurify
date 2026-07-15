@@ -9,15 +9,14 @@ export default function CTA() {
         <div className="sticky top-0 h-screen w-full">
           <video
             src="/legalteam.mp4"
-
-           loop 
-           muted 
-           autoPlay
-     
-            className="object-cover opacity-50"
-         
+            loop
+            muted
+            autoPlay
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-[#060b17]/80"></div>
+          {/* Same hero navy-blue gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/85 via-[#0d1b3e]/40 to-[#0d1b3e]/10"></div>
         </div>
       </div>
 
@@ -38,7 +37,7 @@ export default function CTA() {
           We take the time to understand your situation and provide clear, thoughtful legal guidance tailored to your needs.
         </p>
 
-        <button className="mt-4 md:mt-8 bg-white text-[#0f172a] px-6 py-4 md:px-8 font-semibold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-slate-100 transition-colors">
+        <button className="mt-4 md:mt-8 bg-white text-dark-bg px-6 py-4 md:px-8 font-semibold text-sm md:text-base flex items-center justify-center gap-3 hover:bg-slate-100 transition-colors">
           Request A Consultation
           <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5" />
         </button>

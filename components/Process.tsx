@@ -33,10 +33,11 @@ export default function Process() {
             src="/processbg.png"
             alt="Lawyer at desk"
             fill
-            className="object-cover opacity-40 md:opacity-50"
+            className="object-cover opacity-60 md:opacity-70"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+          {/* Hero navy-blue gradient, horizontal direction to match left-side text */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b3e]/85 via-[#0d1b3e]/40 to-[#0d1b3e]/10"></div>
         </div>
       </div>
 
@@ -69,7 +70,7 @@ export default function Process() {
               <span className="text-3xl md:text-4xl font-medium text-[#2c4694]">
                 {step.number}
               </span>
-              <h3 className="text-2xl md:text-3xl font-medium text-[#0f172a] tracking-tight">
+              <h3 className="text-2xl md:text-3xl font-medium text-dark-bg tracking-tight">
                 {step.title}
               </h3>
               <p className="text-slate-600 text-base md:text-lg leading-relaxed">

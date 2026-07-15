@@ -3,18 +3,18 @@ import { Star, Quote } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section className="w-full bg-[#eef3fe] py-16 md:py-24 px-6 md:px-12">
+    <section className="w-full bg-secondary-bg py-16 md:py-24 px-6 md:px-12">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col">
         
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12 md:mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-8 md:w-12 h-[1px] bg-slate-300"></div>
-            <span className="text-[#0f172a] font-medium text-sm md:text-base tracking-wide">Client Perspectives</span>
+            <span className="text-dark-bg font-medium text-sm md:text-base tracking-wide">Client Perspectives</span>
             <div className="w-8 md:w-12 h-[1px] bg-slate-300"></div>
           </div>
           
-          <h2 className="text-3xl md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-[#0f172a] tracking-tight max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-dark-bg tracking-tight max-w-2xl mx-auto">
             Trusted By Individuals And Businesses Alike
           </h2>
         </div>
@@ -25,15 +25,15 @@ export default function Testimonials() {
           {/* Column 1: Image Card */}
           <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full overflow-hidden bg-black flex flex-col justify-end">
             <video
-              src="/testimonial.mp4" 
+              src="/testimonial.mp4"
               loop
               muted
               autoPlay
-
-              className="object-cover opacity-90"
-
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/90 via-transparent to-transparent"></div>
+            {/* Same navy-blue gradient as hero */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/85 via-[#0d1b3e]/40 to-[#0d1b3e]/10"></div>
             
             <div className="relative z-10 p-6 md:p-8 flex items-center gap-4">
               <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden shrink-0">
@@ -72,7 +72,7 @@ export default function Testimonials() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-[#0f172a] font-semibold text-base md:text-lg">Michael Thompson</span>
+                <span className="text-dark-bg font-semibold text-base md:text-lg">Michael Thompson</span>
                 <span className="text-slate-500 text-sm md:text-base">Founder, Valeon Group</span>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Testimonials() {
           <div className="flex flex-col gap-6 lg:h-full">
             
             {/* Top Rating Card */}
-            <div className="bg-[#0b132b] p-8 md:p-10 flex flex-col justify-between h-[200px] lg:h-[260px] shrink-0">
+            <div className="bg-darker-bg p-8 md:p-10 flex flex-col justify-between h-[200px] lg:h-[260px] shrink-0">
               <div className="flex justify-between items-start">
                 <span className="text-5xl md:text-6xl font-medium text-white tracking-tight">4.9/5</span>
                 <div className="flex gap-1 text-white">
@@ -116,7 +116,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[#0f172a] font-semibold text-base md:text-lg">Sarah L.</span>
+                  <span className="text-dark-bg font-semibold text-base md:text-lg">Sarah L.</span>
                   <span className="text-slate-500 text-sm md:text-base">Family Law Client</span>
                 </div>
               </div>

@@ -4,14 +4,14 @@ import { NumberTicker } from '@/components/ui/number-ticker';
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full bg-[#eef3fe] py-16 md:py-24 px-6 md:px-12">
+    <section id="about" className="relative w-full bg-secondary-bg py-16 md:py-24 px-6 md:px-12">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24">
         
         {/* Left Column */}
         <div className="w-full lg:w-1/2 flex flex-col justify-start">
           <div className="hidden lg:flex items-center gap-4 mb-12">
             <div className="w-12 h-[1px] bg-slate-300"></div>
-            <span className="text-[#0f172a] font-medium text-sm tracking-wide">About Us</span>
+            <span className="text-dark-bg font-medium text-sm tracking-wide">About Us</span>
           </div>
           
           <div className="relative aspect-video w-full overflow-hidden bg-black">
@@ -30,10 +30,10 @@ export default function About() {
         <div className="w-full lg:w-1/2 flex flex-col items-start pt-2 lg:pt-0">
           <div className="lg:hidden flex items-center gap-4 mb-6 mt-6">
             <div className="w-12 h-[1px] bg-slate-300"></div>
-            <span className="text-[#0f172a] font-medium text-sm tracking-wide">About Us</span>
+            <span className="text-dark-bg font-medium text-sm tracking-wide">About Us</span>
           </div>
           
-          <h2 className="text-[2.2rem] md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-[#0f172a] mb-6 tracking-tight">
+          <h2 className="text-[2.2rem] md:text-5xl lg:text-[3.2rem] leading-[1.15] font-medium text-dark-bg mb-6 tracking-tight">
             Modern Legal Practice<br className="hidden md:block" /> Grounded In Clarity & Trust
           </h2>
           
@@ -41,7 +41,7 @@ export default function About() {
             At Jurify, we provide clear, thoughtful legal guidance grounded in real understanding, working closely with individuals and businesses to navigate complex legal matters with confidence. We take the time to listen, explain options clearly, and offer practical direction tailored to each situation.
           </p>
           
-          <button className="bg-[#112a75] text-white px-8 py-4 font-semibold text-base flex items-center justify-center gap-3 hover:bg-[#0c1f56] transition-colors mb-12 lg:mb-20">
+          <button className="bg-primary text-white px-8 py-4 font-semibold text-base flex items-center justify-center gap-3 hover:bg-primary-dark transition-colors mb-12 lg:mb-20">
             Learn More
             <ArrowUpRight className="w-5 h-5" />
           </button>
